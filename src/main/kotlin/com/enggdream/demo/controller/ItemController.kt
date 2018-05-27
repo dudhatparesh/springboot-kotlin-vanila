@@ -52,7 +52,7 @@ class ItemController {
                 @RequestParam("longitude") longitude: Double,
                 @RequestParam("currency") currency: String,
                 @RequestParam("amount") amount: Double,
-                @RequestPart("file") imageFile: MultipartFile,
+                @RequestPart("file") imageFile: MultipartFile? =null,
                 @RequestParam("id") itemId: Int
     ): ResponseDTO {
 
